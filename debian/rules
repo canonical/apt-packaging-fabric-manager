@@ -57,18 +57,19 @@ endif
 %:
 	dh $@ 
 
-override_dh_clean:
+override_dh_clean: fill_templates
 	dh_clean
 
 override_dh_auto_build:
 	rm -f lib*.so
 
+.PHONY: fill_templates
 fill_templates:
 	for template in debian/templates/*.in; do \
 		dest=`echo $$template | \
 		      sed -e "s|\.in\$$||" \
 		          -e "s|templates\/||" \
-		          -e "s|BRANCH|$(BRANCH)|"`; \
+		          -e "s|BRANCH|$(MAJOR_VER)|"`; \
 		sed -e "s|#VERSION#|$(VERSION)|g" \
 		    -e "s|#BRANCH#|$(BRANCH)|g" \
 		    -e "s|#REVISION#|$(REVISION)|g" \
