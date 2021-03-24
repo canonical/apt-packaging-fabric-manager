@@ -57,11 +57,25 @@ endif
 %:
 	dh $@ 
 
+override_dh_auto_clean:
+	rm -f NVIDIA-Linux
+	rm -fr $(foreach a,$(ARCH_LIST),NVIDIA-Linux-$a $(NVIDIA_DIRNAME_$a))
+
 override_dh_clean: fill_templates
 	dh_clean
 
 override_dh_auto_build:
 	rm -f lib*.so
+
+NVIDIA-Linux-%:
+	ln -s $* $@
+
+# Unpack all architectures, we may need files from all of them.
+unpack-stamp: NVIDIA-Linux-amd64
+	dh_testdir
+	ln -s NVIDIA-Linux-amd64 NVIDIA-Linux
+	ls -al
+	touch $@
 
 .PHONY: fill_templates
 fill_templates:
@@ -78,7 +92,7 @@ fill_templates:
 		    $$template > $$dest; \
 	done
 
-override_dh_auto_install:
+override_dh_auto_install: unpack-stamp
 	dh_install --exclude=none --fail-missing
 
 override_dh_makeshlibs:
