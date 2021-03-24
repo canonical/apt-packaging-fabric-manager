@@ -19,8 +19,12 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Source: fabricmanager
-Maintainer: cudatools <cudatools@nvidia.com>
+Source: fabric-manager-#BRANCH#
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Uploaders:
+ Alberto Milone <alberto.milone@canonical.com>,
+Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
+Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/#FLAVOUR#
 Section: multiverse/devel
 Priority: optional
 Standards-Version: 3.8.0
