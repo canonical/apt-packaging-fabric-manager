@@ -59,6 +59,7 @@ endif
 
 override_dh_auto_clean:
 	rm -f NVIDIA-Linux
+	rm -Rf fabricmanager
 	rm -fr $(foreach a,$(ARCH_LIST),NVIDIA-Linux-$a $(NVIDIA_DIRNAME_$a))
 
 override_dh_clean: fill_templates
@@ -68,7 +69,8 @@ override_dh_auto_build:
 	rm -f lib*.so
 
 NVIDIA-Linux-%:
-	ln -s $* $@
+	tar -xzvf $*/${NVIDIA_FILENAME_$*}
+	ln -s fabricmanager $@
 
 # Unpack all architectures, we may need files from all of them.
 unpack-stamp: NVIDIA-Linux-amd64
