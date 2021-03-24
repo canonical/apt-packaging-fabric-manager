@@ -1,10 +1,10 @@
-nv-fabricmanager                /usr/bin
-nvswitch-audit                  /usr/bin
+NVIDIA-Linux/nv-fabricmanager                /usr/bin
+NVIDIA-Linux/nvswitch-audit                  /usr/bin
 
-nvidia-fabricmanager.service    /lib/systemd/system
+NVIDIA-Linux/nvidia-fabricmanager.service    /lib/systemd/system
 
-*_topology                      /usr/share/nvidia/nvswitch/
-fabricmanager.cfg               /usr/share/nvidia/nvswitch/
+NVIDIA-Linux/*_topology                      /usr/share/nvidia/nvswitch/
+NVIDIA-Linux/fabricmanager.cfg               /usr/share/nvidia/nvswitch/
 
-LICENSE                         /usr/share/doc/nvidia-fabricmanager/
-third-party-notices.txt         /usr/share/doc/nvidia-fabricmanager/
+NVIDIA-Linux/LICENSE                         /usr/share/doc/nvidia-fabricmanager/
+NVIDIA-Linux/third-party-notices.txt         /usr/share/doc/nvidia-fabricmanager/
