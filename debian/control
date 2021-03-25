@@ -25,6 +25,7 @@ Uploaders:
  Alberto Milone <alberto.milone@canonical.com>,
 Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
 Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/460
+Build-Depends: debhelper (>=9) | debhelper-compat
 Section: multiverse/devel
 Priority: optional
 Standards-Version: 3.8.0
