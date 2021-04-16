@@ -1,5 +1,5 @@
-fabric-manager-450 (450.119.03-0ubuntu0~0.20.10.1) groovy; urgency=medium
+fabric-manager-450 (450.119.04-0ubuntu0.18.04.1) bionic; urgency=medium
 
-  * Initial release.
+  * Initial release (LP: #1925522).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 16 Apr 2021 16:40:15 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 16 Apr 2021 17:07:52 +0200
