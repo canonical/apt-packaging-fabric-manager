@@ -19,18 +19,18 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Source: fabric-manager-460
+Source: fabric-manager-450
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Uploaders:
  Alberto Milone <alberto.milone@canonical.com>,
 Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
-Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/460
+Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/450
 Build-Depends: debhelper (>=9) | debhelper-compat
 Section: multiverse/devel
 Priority: optional
 Standards-Version: 3.8.0
 
-Package: nvidia-fabricmanager-460
+Package: nvidia-fabricmanager-450
 Architecture: amd64
 Depends: ${misc:Depends}, libc6 (>= 2.2.1)
 Provides: nvidia-fabricmanager
@@ -39,7 +39,7 @@ Conflicts: nvidia-fabricmanager
 Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
-Package: nvidia-fabricmanager-dev-460
+Package: nvidia-fabricmanager-dev-450
 Architecture: amd64
 Depends: ${misc:Depends}
 # Normally we would have a dev package depend on its runtime package. However
@@ -51,11 +51,11 @@ Conflicts: nvidia-fabricmanager-dev
 Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
 
-Package: cuda-drivers-fabricmanager-460
+Package: cuda-drivers-fabricmanager-450
 Architecture: amd64
 Depends: ${misc:Depends},
- nvidia-fabricmanager-460 (= ${binary:Version}),
- cuda-drivers-460 (= ${binary:Version})
+ nvidia-fabricmanager-450 (= ${binary:Version}),
+ cuda-drivers-450 (= ${binary:Version})
 Provides: cuda-drivers-fabricmanager-branch
 Replaces: cuda-drivers-fabricmanager-branch
 Conflicts: cuda-drivers-fabricmanager-branch
@@ -67,7 +67,7 @@ Description: Meta-package for FM and Driver
 Package: cuda-drivers-fabricmanager
 Architecture: amd64
 Depends: ${misc:Depends},
- cuda-drivers-fabricmanager-460 (= ${binary:Version})
+ cuda-drivers-fabricmanager-450 (= ${binary:Version})
 Description: Meta-package for FM and Driver
  Convenience meta-package for installing fabricmanager and the cuda-drivers
  meta-package simultaneously while keeping version equivalence. This meta-
