@@ -26,6 +26,7 @@ Uploaders:
 Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
 Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/#BRANCH#
 Build-Depends: debhelper (>= 10)
+XS-Autobuild: yes
 Section: multiverse/devel
 Priority: optional
 Standards-Version: 4.1.4
