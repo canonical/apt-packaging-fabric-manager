@@ -25,14 +25,15 @@ Uploaders:
  Alberto Milone <alberto.milone@canonical.com>,
 Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
 Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/460
-Build-Depends: debhelper (>=9) | debhelper-compat
+Build-Depends: debhelper (>= 10)
+XS-Autobuild: yes
 Section: multiverse/devel
 Priority: optional
-Standards-Version: 3.8.0
+Standards-Version: 4.1.4
 
 Package: nvidia-fabricmanager-460
 Architecture: amd64
-Depends: ${misc:Depends}, libc6 (>= 2.2.1)
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
 Replaces: nvidia-fabricmanager
 Conflicts: nvidia-fabricmanager
