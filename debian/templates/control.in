@@ -25,10 +25,10 @@ Uploaders:
  Alberto Milone <alberto.milone@canonical.com>,
 Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
 Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/#BRANCH#
-Build-Depends: debhelper (>=9) | debhelper-compat
+Build-Depends: debhelper (>= 10)
 Section: multiverse/devel
 Priority: optional
-Standards-Version: 3.8.0
+Standards-Version: 4.1.4
 
 Package: nvidia-fabricmanager-#BRANCH#
 Architecture: amd64
