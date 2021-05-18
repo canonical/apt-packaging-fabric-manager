@@ -33,7 +33,7 @@ Standards-Version: 4.1.4
 
 Package: nvidia-fabricmanager-#BRANCH#
 Architecture: amd64
-Depends: ${misc:Depends}, libc6 (>= 2.2.1)
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
 Replaces: nvidia-fabricmanager
 Conflicts: nvidia-fabricmanager
