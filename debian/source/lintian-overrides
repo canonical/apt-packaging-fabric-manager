@@ -1,0 +1,2 @@
+version-substvar-for-external-package
+override_dh_fixperms-does-not-call-dh_fixperms
