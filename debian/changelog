@@ -1,8 +1,9 @@
-fabric-manager-450 (450.119.04-0ubuntu3) UNRELEASED; urgency=medium
+fabric-manager-450 (450.119.04-0ubuntu3) impish; urgency=medium
 
-  * 
+  * debian/templates/control.in:
+    - Make cuda-drivers-fabricmanager a virtual package.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Wed, 19 May 2021 14:00:26 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 19 May 2021 14:01:28 +0200
 
 fabric-manager-450 (450.119.04-0ubuntu2) impish; urgency=medium
 
