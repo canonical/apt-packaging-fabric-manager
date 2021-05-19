@@ -57,19 +57,10 @@ Architecture: amd64
 Depends: ${misc:Depends},
  nvidia-fabricmanager-450 (= ${binary:Version}),
  cuda-drivers-450 (= ${binary:Version})
-Provides: cuda-drivers-fabricmanager-branch
-Replaces: cuda-drivers-fabricmanager-branch
-Conflicts: cuda-drivers-fabricmanager-branch
+Provides: cuda-drivers-fabricmanager
+Replaces: cuda-drivers-fabricmanager
+Conflicts: cuda-drivers-fabricmanager
 Description: Meta-package for FM and Driver
  Convenience meta-package for installing fabricmanager and the cuda-drivers
  meta-package simultaneously while keeping version equivalence. This meta-
  package is branch-specific.
-
-Package: cuda-drivers-fabricmanager
-Architecture: amd64
-Depends: ${misc:Depends},
- cuda-drivers-fabricmanager-450 (= ${binary:Version})
-Description: Meta-package for FM and Driver
- Convenience meta-package for installing fabricmanager and the cuda-drivers
- meta-package simultaneously while keeping version equivalence. This meta-
- package is across all driver branches.
