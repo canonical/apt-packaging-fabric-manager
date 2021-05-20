@@ -56,7 +56,6 @@ Package: cuda-drivers-fabricmanager-#BRANCH#
 Architecture: amd64
 Depends: ${misc:Depends},
  nvidia-fabricmanager-#BRANCH# (= ${binary:Version}),
- cuda-drivers-#BRANCH# (= ${binary:Version})
 Provides: cuda-drivers-fabricmanager
 Replaces: cuda-drivers-fabricmanager
 Conflicts: cuda-drivers-fabricmanager
