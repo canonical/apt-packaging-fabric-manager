@@ -56,7 +56,6 @@ Package: cuda-drivers-fabricmanager-460
 Architecture: amd64
 Depends: ${misc:Depends},
  nvidia-fabricmanager-460 (= ${binary:Version}),
- cuda-drivers-460 (= ${binary:Version})
 Provides: cuda-drivers-fabricmanager
 Replaces: cuda-drivers-fabricmanager
 Conflicts: cuda-drivers-fabricmanager
