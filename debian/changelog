@@ -1,8 +1,9 @@
-fabric-manager-460 (460.73.01-0ubuntu4) UNRELEASED; urgency=medium
+fabric-manager-460 (460.73.01-0ubuntu4) impish; urgency=medium
 
-  * 
+  * debian/templates/control.in:
+    - Drop dependency on cuda-drivers-$branch.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 20 May 2021 14:48:30 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 20 May 2021 14:52:44 +0200
 
 fabric-manager-460 (460.73.01-0ubuntu3) impish; urgency=medium
 
