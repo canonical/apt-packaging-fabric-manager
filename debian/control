@@ -56,7 +56,6 @@ Package: cuda-drivers-fabricmanager-450
 Architecture: amd64
 Depends: ${misc:Depends},
  nvidia-fabricmanager-450 (= ${binary:Version}),
- cuda-drivers-450 (= ${binary:Version})
 Provides: cuda-drivers-fabricmanager
 Replaces: cuda-drivers-fabricmanager
 Conflicts: cuda-drivers-fabricmanager
