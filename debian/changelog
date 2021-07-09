@@ -1,8 +1,8 @@
-fabric-manager-460 (460.91.03-0ubuntu1) UNRELEASED; urgency=medium
+fabric-manager-460 (460.91.03-0ubuntu1) impish; urgency=medium
 
-  * 
+  * New upstream release (LP: #1933980).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 09 Jul 2021 16:23:26 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 09 Jul 2021 16:25:04 +0200
 
 fabric-manager-460 (460.73.01-0ubuntu4) impish; urgency=medium
 
