@@ -1,8 +1,8 @@
-fabric-manager-460 (460.91.03-0ubuntu0.21.04.1) UNRELEASED; urgency=medium
+fabric-manager-460 (460.91.03-0ubuntu0.21.04.1) hirsute; urgency=medium
 
-  * 
+  * New upstream release (LP: #1933980).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 09 Jul 2021 16:25:26 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 09 Jul 2021 16:25:57 +0200
 
 fabric-manager-460 (460.73.01-0ubuntu0.21.04.2) hirsute; urgency=medium
 
