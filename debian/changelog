@@ -1,43 +1,5 @@
-fabric-manager-460 (460.91.03-0ubuntu1) impish; urgency=medium
+fabric-manager-470 (470.57.02-0ubuntu1) UNRELEASED; urgency=medium
 
-  * New upstream release (LP: #1933980).
+  * Initial release (LP: #1936577).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 09 Jul 2021 16:25:04 +0200
-
-fabric-manager-460 (460.73.01-0ubuntu4) impish; urgency=medium
-
-  * debian/templates/control.in:
-    - Drop dependency on cuda-drivers-$branch.
-
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 20 May 2021 14:52:44 +0200
-
-fabric-manager-460 (460.73.01-0ubuntu3) impish; urgency=medium
-
-  * debian/templates/control.in:
-    - Make cuda-drivers-fabricmanager a virtual package.
-
- -- Alberto Milone <alberto.milone@canonical.com>  Wed, 19 May 2021 13:51:19 +0200
-
-fabric-manager-460 (460.73.01-0ubuntu2) impish; urgency=medium
-
-  * debian/rules:
-    - Remove override_dh_auto_build.
-    - Remove the BRANCH variable.
-  * debian/compat:
-    - Set compat to 10.
-  * debian/templates/control.in:
-    - Add XS-Autobuild: yes
-    - Add build dependency on debhelper >= 10.
-    - Update standards.
-    - Replace hardcoded libc6 dependency with ${shlibs:Depends}.
-    - Use the same section that is used for the nvidia drivers.
-  * debian/source/lintian-overrides:
-    - Override two lintian warnings/errors.
-
- -- Alberto Milone <alberto.milone@canonical.com>  Tue, 18 May 2021 17:48:11 +0200
-
-fabric-manager-460 (460.73.01-0ubuntu1) impish; urgency=medium
-
-  * Initial release (LP: #1925522).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 16 Apr 2021 16:40:15 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 16 Jul 2021 13:38:01 +0200
