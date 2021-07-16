@@ -1,0 +1,4 @@
+NVIDIA-Linux/libnvfm.so.1    /usr/lib/x86_64-linux-gnu
+
+NVIDIA-Linux/nv_fm_agent.h   /usr/include
+NVIDIA-Linux/nv_fm_types.h   /usr/include
