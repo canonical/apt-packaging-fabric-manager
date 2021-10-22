@@ -1,3 +1,9 @@
+fabric-manager-450 (450.156.00-0ubuntu0~0.21.10.1) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Oct 2021 15:52:25 +0200
+
 fabric-manager-450 (450.142.00-0ubuntu1) impish; urgency=medium
 
   * New upstream release (LP: #1933980).
