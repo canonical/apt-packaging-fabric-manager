@@ -1,8 +1,12 @@
-fabric-manager-450 (450.156.00-0ubuntu0~0.21.10.1) UNRELEASED; urgency=medium
+fabric-manager-450 (450.156.00-0ubuntu1) jammy; urgency=medium
 
-  * 
+  * New upstream release (LP: #1948025).
+  * debian/rules{.defs}:
+    - Switch to new tarball format.
+  * debian/templates/nvidia-fabricmanager*.install.in:
+    - Change source paths.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Oct 2021 15:52:25 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Oct 2021 15:54:04 +0200
 
 fabric-manager-450 (450.142.00-0ubuntu1) impish; urgency=medium
 
