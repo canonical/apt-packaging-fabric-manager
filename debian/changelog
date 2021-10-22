@@ -1,8 +1,12 @@
-fabric-manager-470 (470.82.00-0ubuntu0.20.04.1) UNRELEASED; urgency=medium
+fabric-manager-470 (470.82.01-0ubuntu0.20.04.1) focal; urgency=medium
 
-  * 
+  * New upstream release (LP: #1948025).
+  * debian/rules{.defs}:
+    - Switch to new tarball format.
+  * debian/templates/nvidia-fabricmanager*.install.in:
+    - Change source paths.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Oct 2021 16:33:05 +0200
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Oct 2021 16:33:57 +0200
 
 fabric-manager-470 (470.57.02-0ubuntu0.20.04.1) focal; urgency=medium
 
