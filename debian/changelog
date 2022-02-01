@@ -1,8 +1,10 @@
-fabric-manager-470 (470.103.01-0ubuntu0.21.10.1) UNRELEASED; urgency=medium
+fabric-manager-470 (470.103.01-0ubuntu0.21.10.1) impish; urgency=medium
 
-  * 
+  * New upstream release (LP: #1957790).
+  * debian/templates/control.in:
+    - Add transitional package for the 460 series.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Tue, 01 Feb 2022 12:48:20 +0100
+ -- Alberto Milone <alberto.milone@canonical.com>  Tue, 01 Feb 2022 12:48:53 +0100
 
 fabric-manager-470 (470.82.01-0ubuntu0.21.10.1) impish; urgency=medium
 
