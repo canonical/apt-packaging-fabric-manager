@@ -63,3 +63,24 @@ Description: Meta-package for FM and Driver
  Convenience meta-package for installing fabricmanager and the cuda-drivers
  meta-package simultaneously while keeping version equivalence. This meta-
  package is branch-specific.
+
+Package: nvidia-fabricmanager-510
+Architecture: amd64
+Depends: nvidia-fabricmanager-#BRANCH#
+Description: Transitional package for nvidia-fabricmanager-#FLAVOUR#
+ This is a transitional package for nvidia-fabricmanager-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-fabricmanager-dev-510
+Architecture: amd64
+Depends: nvidia-fabricmanager-dev-#BRANCH#
+Description: Transitional package for nvidia-fabricmanager-dev-#BRANCH#
+ This is a transitional package for nvidia-fabricmanager-dev-#BRANCH#, and can be
+ safely removed after the installation is complete.
+
+Package: cuda-drivers-fabricmanager-510
+Architecture: amd64
+Depends: cuda-drivers-fabricmanager-#BRANCH#
+Description: Transitional package for cuda-drivers-fabricmanager-#BRANCH#
+ This is a transitional package for cuda-drivers-fabricmanager-#BRANCH#, and can be
+ safely removed after the installation is complete.
