@@ -1,5 +1,5 @@
-fabric-manager-510 (510.47.03-0ubuntu0.21.10.1) UNRELEASED; urgency=medium
+fabric-manager-510 (510.47.03-0ubuntu0.21.10.1) impish; urgency=medium
 
-  * 
+  * Initial release (LP: #1961075).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Wed, 16 Feb 2022 17:03:20 +0100
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 16 Feb 2022 17:04:35 +0100
