@@ -1,8 +1,8 @@
-fabric-manager-450 (450.191.01-0ubuntu0.20.04.1) UNRELEASED; urgency=medium
+fabric-manager-450 (450.191.01-0ubuntu0.20.04.1) focal; urgency=medium
 
-  * 
+  * New upstream release (LP: #1973300).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 13 May 2022 15:46:05 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 13 May 2022 15:47:02 +0000
 
 fabric-manager-450 (450.172.01-0ubuntu0.20.04.1) focal; urgency=medium
 
