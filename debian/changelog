@@ -1,8 +1,8 @@
-fabric-manager-470 (470.129.06-0ubuntu0.18.04.1) UNRELEASED; urgency=medium
+fabric-manager-470 (470.129.06-0ubuntu0.18.04.1) bionic; urgency=medium
 
-  * 
+  * New upstream release (LP: #1973300).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Mon, 16 May 2022 11:19:27 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 16 May 2022 11:19:50 +0000
 
 fabric-manager-470 (470.103.01-0ubuntu0.18.04.1) bionic; urgency=medium
 
