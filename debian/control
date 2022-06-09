@@ -19,19 +19,19 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Source: fabric-manager-510
+Source: fabric-manager-515
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Uploaders:
  Alberto Milone <alberto.milone@canonical.com>,
 Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
-Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/510
+Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/515
 Build-Depends: debhelper (>= 10)
 XS-Autobuild: yes
 Section: non-free/libs
 Priority: optional
 Standards-Version: 4.1.4
 
-Package: nvidia-fabricmanager-510
+Package: nvidia-fabricmanager-515
 Architecture: amd64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
@@ -40,7 +40,7 @@ Conflicts: nvidia-fabricmanager
 Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
-Package: nvidia-fabricmanager-dev-510
+Package: nvidia-fabricmanager-dev-515
 Architecture: amd64
 Depends: ${misc:Depends}
 # Normally we would have a dev package depend on its runtime package. However
@@ -52,10 +52,10 @@ Conflicts: nvidia-fabricmanager-dev
 Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
 
-Package: cuda-drivers-fabricmanager-510
+Package: cuda-drivers-fabricmanager-515
 Architecture: amd64
 Depends: ${misc:Depends},
- nvidia-fabricmanager-510 (= ${binary:Version}),
+ nvidia-fabricmanager-515 (= ${binary:Version}),
 Provides: cuda-drivers-fabricmanager
 Replaces: cuda-drivers-fabricmanager
 Conflicts: cuda-drivers-fabricmanager
@@ -66,21 +66,21 @@ Description: Meta-package for FM and Driver
 
 Package: nvidia-fabricmanager-460
 Architecture: amd64
-Depends: nvidia-fabricmanager-510
+Depends: nvidia-fabricmanager-515
 Description: Transitional package for nvidia-fabricmanager-#FLAVOUR#
  This is a transitional package for nvidia-fabricmanager-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
 Package: nvidia-fabricmanager-dev-460
 Architecture: amd64
-Depends: nvidia-fabricmanager-dev-510
-Description: Transitional package for nvidia-fabricmanager-dev-510
- This is a transitional package for nvidia-fabricmanager-dev-510, and can be
+Depends: nvidia-fabricmanager-dev-515
+Description: Transitional package for nvidia-fabricmanager-dev-515
+ This is a transitional package for nvidia-fabricmanager-dev-515, and can be
  safely removed after the installation is complete.
 
 Package: cuda-drivers-fabricmanager-460
 Architecture: amd64
-Depends: cuda-drivers-fabricmanager-510
-Description: Transitional package for cuda-drivers-fabricmanager-510
- This is a transitional package for cuda-drivers-fabricmanager-510, and can be
+Depends: cuda-drivers-fabricmanager-515
+Description: Transitional package for cuda-drivers-fabricmanager-515
+ This is a transitional package for cuda-drivers-fabricmanager-515, and can be
  safely removed after the installation is complete.
