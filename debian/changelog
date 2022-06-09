@@ -1,5 +1,5 @@
-fabric-manager-515 (515.48.07-0ubuntu0.18.04.1) UNRELEASED; urgency=medium
+fabric-manager-515 (515.48.07-0ubuntu0.18.04.1) bionic; urgency=medium
 
-  * Initial release (LP: #1961075).
+  * Initial release (LP: #1976425).
 
- -- Ian May <ian.may@canonical.com>  Thu, 09 Jun 2022 10:42:16 -0500
+ -- Ian May <ian.may@canonical.com>  Thu, 09 Jun 2022 10:48:18 -0500
