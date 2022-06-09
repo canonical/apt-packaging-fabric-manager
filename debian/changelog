@@ -1,5 +1,5 @@
-fabric-manager-515 (515.48.07-0ubuntu0.22.04.1) UNRELEASED; urgency=medium
+fabric-manager-515 (515.48.07-0ubuntu0.22.04.1) jammy; urgency=medium
 
   * Initial release (LP: #1976425).
 
- -- Ian May <ian.may@canonical.com>  Thu, 09 Jun 2022 12:21:42 -0500
+ -- Ian May <ian.may@canonical.com>  Thu, 09 Jun 2022 12:24:36 -0500
