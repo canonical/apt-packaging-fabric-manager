@@ -1,8 +1,8 @@
-fabric-manager-450 (450.203.03-0ubuntu0.22.04.1) UNRELEASED; urgency=medium
+fabric-manager-450 (450.203.03-0ubuntu0.22.04.1) jammy; urgency=medium
 
-  * 
+  * New upstream release (LP: #1982501).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Jul 2022 16:04:11 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 22 Jul 2022 16:08:15 +0000
 
 fabric-manager-450 (450.191.01-0ubuntu0.22.04.1) jammy; urgency=medium
 
