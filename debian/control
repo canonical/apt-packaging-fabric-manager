@@ -32,7 +32,7 @@ Priority: optional
 Standards-Version: 4.1.4
 
 Package: nvidia-fabricmanager-515
-Architecture: amd64
+Architecture: amd64 arm64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
 Replaces: nvidia-fabricmanager
@@ -41,7 +41,7 @@ Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
 Package: nvidia-fabricmanager-dev-515
-Architecture: amd64
+Architecture: amd64 arm64
 Depends: ${misc:Depends}
 # Normally we would have a dev package depend on its runtime package. However
 # FM isn't a normal package. All the libs are in the dev package, and the
@@ -53,7 +53,7 @@ Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
 
 Package: cuda-drivers-fabricmanager-515
-Architecture: amd64
+Architecture: amd64 arm64
 Depends: ${misc:Depends},
  nvidia-fabricmanager-515 (= ${binary:Version}),
 Provides: cuda-drivers-fabricmanager
