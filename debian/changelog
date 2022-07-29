@@ -1,8 +1,11 @@
-fabric-manager-515 (515.65.01-0ubuntu0.22.04.1) UNRELEASED; urgency=medium
+fabric-manager-515 (515.65.01-0ubuntu0.22.04.1) jammy; urgency=medium
 
-  * 
+  * New upstream release (LP: #1982501).
+  * debian/rules{.defs},
+    debian/templates/control.in:
+    - Enable arm64 builds.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 29 Jul 2022 10:48:05 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 29 Jul 2022 10:49:58 +0000
 
 fabric-manager-515 (515.48.07-0ubuntu0.22.04.2) jammy; urgency=medium
 
