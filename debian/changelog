@@ -1,8 +1,9 @@
-fabric-manager-515 (515.86.01-0ubuntu0.22.04.1) UNRELEASED; urgency=medium
+fabric-manager-515 (515.86.01-0ubuntu0.22.04.1) jammy; urgency=medium
 
-  * 
+  * New upstream release (LP: #1997087).
+    - Add transitional packages for the 510 series.
 
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 24 Nov 2022 11:03:14 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 24 Nov 2022 11:04:03 +0000
 
 fabric-manager-515 (515.65.01-0ubuntu0.22.04.1) jammy; urgency=medium
 
