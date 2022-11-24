@@ -1,8 +1,8 @@
-fabric-manager-515 (515.86.01-0ubuntu0.18.04.1) UNRELEASED; urgency=medium
+fabric-manager-515 (515.86.01-0ubuntu0.18.04.1) bionic; urgency=medium
 
-  * 
+  * New upstream release (LP: #1997087).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 24 Nov 2022 11:36:41 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Thu, 24 Nov 2022 11:37:08 +0000
 
 fabric-manager-515 (515.65.01-0ubuntu0.18.04.1) bionic; urgency=medium
 
