@@ -1,28 +1,5 @@
-fabric-manager-515 (515.86.01-0ubuntu0.22.04.1) jammy; urgency=medium
+fabric-manager-525 (525.60.13-0ubuntu0.22.04.1) UNRELEASED; urgency=medium
 
-  * New upstream release (LP: #1997087).
-    - Add transitional packages for the 510 series.
+  * 
 
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 24 Nov 2022 11:04:03 +0000
-
-fabric-manager-515 (515.65.01-0ubuntu0.22.04.1) jammy; urgency=medium
-
-  * New upstream release (LP: #1982501).
-  * debian/rules{.defs},
-    debian/templates/control.in:
-    - Enable arm64 builds.
-
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 29 Jul 2022 10:49:58 +0000
-
-fabric-manager-515 (515.48.07-0ubuntu0.22.04.2) jammy; urgency=medium
-
-  * debian/templates/control.in:
-    - Drop transitional packages for 460 (LP: #1976425).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 23 Jun 2022 15:34:15 +0000
-
-fabric-manager-515 (515.48.07-0ubuntu0.22.04.1) jammy; urgency=medium
-
-  * Initial release (LP: #1976425).
-
- -- Ian May <ian.may@canonical.com>  Thu, 09 Jun 2022 12:24:36 -0500
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 14 Dec 2022 11:17:34 +0000
