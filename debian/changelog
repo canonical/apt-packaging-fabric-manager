@@ -1,24 +1,5 @@
-fabric-manager-515 (515.86.01-0ubuntu0.20.04.1) focal; urgency=medium
+fabric-manager-525 (525.60.13-0ubuntu0.20.04.1) UNRELEASED; urgency=medium
 
-  * New upstream release (LP: #1997087).
+  * 
 
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 24 Nov 2022 11:35:21 +0000
-
-fabric-manager-515 (515.65.01-0ubuntu0.20.04.1) focal; urgency=medium
-
-  * New upstream release (LP: #1982501).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 29 Jul 2022 10:51:56 +0000
-
-fabric-manager-515 (515.48.07-0ubuntu0.20.04.2) focal; urgency=medium
-
-  * debian/templates/control.in:
-    - Drop transitional packages for 460 (LP: #1976425).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Thu, 23 Jun 2022 15:38:20 +0000
-
-fabric-manager-515 (515.48.07-0ubuntu0.20.04.1) focal; urgency=medium
-
-  * Initial release (LP: #1976425).
-
- -- Ian May <ian.may@canonical.com>  Thu, 09 Jun 2022 11:38:21 -0500
+ -- Alberto Milone <alberto.milone@canonical.com>  Wed, 14 Dec 2022 11:24:52 +0000
