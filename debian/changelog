@@ -1,3 +1,9 @@
+fabric-manager-450 (450.236.01-0ubuntu0.18.04.1) UNRELEASED; urgency=medium
+
+  * New upstream release (LP: #2012529).
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 27 Mar 2023 17:03:57 +0000
+
 fabric-manager-450 (450.216.04-0ubuntu0.18.04.1) bionic; urgency=medium
 
   * New upstream release (LP: #1997087).
