@@ -1,3 +1,9 @@
+fabric-manager-525 (525.105.17-0ubuntu0.18.04.2) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 23 Jun 2023 16:52:56 +0000
+
 fabric-manager-525 (525.105.17-0ubuntu0.18.04.1) bionic; urgency=medium
 
   * New upstream release (LP: #2012529).
