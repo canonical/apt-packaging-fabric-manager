@@ -87,6 +87,7 @@ fill_templates:
 		    -e "s|#REVISION#|$(REVISION)|g" \
 		    -e "s|#TIMESTAMP#|$(TIMESTAMP)|g" \
 		    -e "s|#DEBLIBINSTDIR#|$(DEBLIBINSTDIR)|g" \
+		    -e "s|#ARCH_LIST#|$(ARCH_LIST)|g" \
 		    $$template > $$dest; \
 	done
 
