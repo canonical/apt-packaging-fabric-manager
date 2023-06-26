@@ -1,3 +1,9 @@
+fabric-manager-525 (525.125.06-0ubuntu0.23.04.1) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Alberto Milone <alberto.milone@canonical.com>  Mon, 26 Jun 2023 15:43:20 +0000
+
 fabric-manager-525 (525.105.17-0ubuntu1.23.04.1) lunar; urgency=medium
 
   * debian/templates/control.in:
