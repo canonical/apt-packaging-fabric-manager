@@ -1,32 +1,5 @@
-fabric-manager-525 (525.125.06-0ubuntu0.20.04.1) focal; urgency=medium
+fabric-manager-535 (535.54.03-0ubuntu0.20.04.1) UNRELEASED; urgency=medium
 
-  * New upstream release (LP: #2024675).
+  * 
 
- -- Alberto Milone <alberto.milone@canonical.com>  Mon, 26 Jun 2023 15:49:12 +0000
-
-fabric-manager-525 (525.105.17-0ubuntu0.20.04.2) focal; urgency=medium
-
-  * debian/templates/control.in:
-    - Add transitional packages for the 515 series (LP: #2024247).
-  * debian/rules:
-    - Pass in the ARCH_LIST variable when generating templates.
-
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 23 Jun 2023 16:52:12 +0000
-
-fabric-manager-525 (525.105.17-0ubuntu0.20.04.1) focal; urgency=medium
-
-  * New upstream release (LP: #2012529).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Mon, 27 Mar 2023 18:59:29 +0000
-
-fabric-manager-525 (525.85.12-0ubuntu0.20.04.1) focal; urgency=medium
-
-  * New upstream release (LP: #2003995).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Wed, 01 Feb 2023 15:08:40 +0000
-
-fabric-manager-525 (525.60.13-0ubuntu0.20.04.1) focal; urgency=medium
-
-  * Initial release (LP: #1999530).
-
- -- Alberto Milone <alberto.milone@canonical.com>  Wed, 14 Dec 2022 11:39:41 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 30 Jun 2023 14:13:05 +0000
