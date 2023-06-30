@@ -1,5 +1,5 @@
-fabric-manager-535 (535.54.03-0ubuntu0.22.04.1) UNRELEASED; urgency=medium
+fabric-manager-535 (535.54.03-0ubuntu0.22.04.1) jammy; urgency=medium
 
-  * 
+  * Initial release (LP: #2025243).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 30 Jun 2023 14:11:18 +0000
+ -- Alberto Milone <alberto.milone@canonical.com>  Fri, 30 Jun 2023 14:12:13 +0000
