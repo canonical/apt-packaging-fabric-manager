@@ -1,8 +1,8 @@
-fabric-manager-535 (535.86.10-0ubuntu1) UNRELEASED; urgency=medium
+fabric-manager-535 (535.86.10-0ubuntu1) mantic; urgency=medium
 
-  * 
+  * New upstream release (LP: #2028125).
 
- -- Alberto Milone <alberto.milone@canonical.com>  Fri, 04 Aug 2023 08:50:05 +0000
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Fri, 28 Jul 2023 14:14:43 +0100
 
 fabric-manager-535 (535.86.09-0ubuntu1) mantic; urgency=medium
 
