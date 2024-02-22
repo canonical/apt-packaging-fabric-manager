@@ -1,3 +1,9 @@
+fabric-manager-535 (535.161.07-0ubuntu1) noble; urgency=medium
+
+  * New upstream release (LP: #2054571)
+
+ -- Dimitri John Ledkov <dimitri.ledkov@canonical.com>  Thu, 22 Feb 2024 18:31:23 +0000
+
 fabric-manager-535 (535.154.05-0ubuntu1) noble; urgency=medium
 
   * New upstream release (LP: #2048901)
