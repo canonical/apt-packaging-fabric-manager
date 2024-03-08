@@ -1,8 +1,8 @@
-fabric-manager-550 (550.54.14-0ubuntu2) UNRELEASED; urgency=medium
+fabric-manager-550 (550.54.14-0ubuntu2) noble; urgency=medium
 
-  * 
+  * add nv_fm_nvl_agent.h and nv_fm_nvl_types.h
 
- -- Kuba Pawlak <kuba.pawlak@canonical.com>  Fri, 08 Mar 2024 16:33:32 +0100
+ -- Kuba Pawlak <kuba.pawlak@canonical.com>  Fri, 08 Mar 2024 16:35:33 +0100
 
 fabric-manager-550 (550.54.14-0ubuntu1) noble; urgency=medium
 
