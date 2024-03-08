@@ -1,3 +1,9 @@
+fabric-manager-550 (550.54.14-0ubuntu2.18.04.1) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Kuba Pawlak <kuba.pawlak@canonical.com>  Fri, 08 Mar 2024 16:48:04 +0100
+
 fabric-manager-550 (550.54.14-0ubuntu1.18.04.1) bionic; urgency=medium
 
   * Initial release (LP: #2055384).
