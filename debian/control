@@ -27,39 +27,49 @@ Vcs-Git: git://github.com/tseliot/apt-packaging-fabric-manager.git
 Vcs-Browser: https://github.com/tseliot/apt-packaging-fabric-manager/tree/525
 Build-Depends: debhelper (>= 10)
 XS-Autobuild: yes
-Section: non-free/libs
+Section: non-free/oldlibs
 Priority: optional
 Standards-Version: 4.1.4
 
 Package: nvidia-fabricmanager-525
-Architecture: amd64
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Provides: nvidia-fabricmanager
-Replaces: nvidia-fabricmanager
-Conflicts: nvidia-fabricmanager
-Description: Fabric Manager for NVSwitch based systems.
- Fabric Manager for NVIDIA NVSwitch based systems.
+Architecture: amd64 arm64
+Multi-Arch: no
+Depends: nvidia-fabricmanager-535
+Description: Fabric Manager for NVSwitch based systems. (transitional package)
+ Transitional package for upgrades. This package can be safely removed.
 
 Package: nvidia-fabricmanager-dev-525
-Architecture: amd64
-Depends: ${misc:Depends}
-# Normally we would have a dev package depend on its runtime package. However
-# FM isn't a normal package. All the libs are in the dev package, and the
-# runtime package is actually a service package.
-Provides: nvidia-fabricmanager-dev
-Replaces: nvidia-fabricmanager-dev
-Conflicts: nvidia-fabricmanager-dev
-Description: Fabric Manager API headers and associated library
- Fabric Manager API headers and associated library
+Architecture: amd64 arm64
+Multi-Arch: no
+Depends: nvidia-fabricmanager-dev-535
+Description: Fabric Manager API headers and associated library (transitional package)
+ Transitional package for upgrades. This package can be safely removed.
 
 Package: cuda-drivers-fabricmanager-525
-Architecture: amd64
-Depends: ${misc:Depends},
- nvidia-fabricmanager-525 (= ${binary:Version}),
-Provides: cuda-drivers-fabricmanager
-Replaces: cuda-drivers-fabricmanager
-Conflicts: cuda-drivers-fabricmanager
-Description: Meta-package for FM and Driver
- Convenience meta-package for installing fabricmanager and the cuda-drivers
- meta-package simultaneously while keeping version equivalence. This meta-
- package is branch-specific.
+Architecture: amd64 arm64
+Multi-Arch: no
+Depends: cuda-drivers-fabricmanager-535
+Description: Meta-package for FM and Driver (transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: nvidia-fabricmanager-515
+Architecture: amd64 arm64
+Multi-Arch: no
+Depends: nvidia-fabricmanager-535
+Description: Fabric Manager for NVSwitch based systems. (transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: nvidia-fabricmanager-dev-515
+Architecture: amd64 arm64
+Multi-Arch: no
+Depends: nvidia-fabricmanager-dev-535
+Description: Fabric Manager API headers and associated library (transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: cuda-drivers-fabricmanager-515
+Architecture: amd64 arm64
+Multi-Arch: no
+Depends: cuda-drivers-fabricmanager-535
+Description: Meta-package for FM and Driver (transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
