@@ -61,37 +61,7 @@ override_dh_auto_clean:
 	rm -Rf fabricmanager
 	rm -fr $(foreach a,$(ARCH_LIST),NVIDIA-Linux-$a $(NVIDIA_DIRNAME_$a))
 
-override_dh_clean: fill_templates
-	dh_clean
-
-NVIDIA-Linux-%:
-	tar -xJvf $*/${NVIDIA_FILENAME_$*}
-	ln -s ${NVIDIA_DIRNAME_$*} $@
-
-# Unpack all architectures, we may need files from all of them.
-unpack-stamp: NVIDIA-Linux-amd64
-	dh_testdir
-	ln -s NVIDIA-Linux-amd64 NVIDIA-Linux
-	ls -al
-	touch $@
-
-.PHONY: fill_templates
-fill_templates:
-	for template in debian/templates/*.in; do \
-		dest=`echo $$template | \
-		      sed -e "s|\.in\$$||" \
-		          -e "s|templates\/||" \
-		          -e "s|BRANCH|$(MAJOR_VER)|"`; \
-		sed -e "s|#VERSION#|$(VERSION)|g" \
-		    -e "s|#BRANCH#|$(MAJOR_VER)|g" \
-		    -e "s|#REVISION#|$(REVISION)|g" \
-		    -e "s|#TIMESTAMP#|$(TIMESTAMP)|g" \
-		    -e "s|#DEBLIBINSTDIR#|$(DEBLIBINSTDIR)|g" \
-		    -e "s|#ARCH_LIST#|$(ARCH_LIST)|g" \
-		    $$template > $$dest; \
-	done
-
-override_dh_auto_install: unpack-stamp
+override_dh_auto_install:
 	dh_install --exclude=none --fail-missing
 
 override_dh_makeshlibs:
