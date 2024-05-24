@@ -1,4 +1,4 @@
-fabric-manager-470 (470.256.02-0ubuntu1) oracular; urgency=medium
+fabric-manager-470 (470.256.02-0ubuntu0.24.04.1) noble; urgency=medium
 
   * New upstream release (LP: #2066904)
 
