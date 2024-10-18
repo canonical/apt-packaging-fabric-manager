@@ -2,5 +2,3 @@ NVIDIA-Linux/lib/libnvfm.so.1        #DEBLIBINSTDIR#
 
 NVIDIA-Linux/include/nv_fm_agent.h   /usr/include
 NVIDIA-Linux/include/nv_fm_types.h   /usr/include
-NVIDIA-Linux/include/nv_fm_nvl_agent.h   /usr/include
-NVIDIA-Linux/include/nv_fm_nvl_types.h   /usr/include
