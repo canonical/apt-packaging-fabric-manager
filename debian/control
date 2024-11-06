@@ -19,19 +19,19 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Source: fabric-manager-550
+Source: fabric-manager-565
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Uploaders:
  Kuba Pawlak <kuba.pawlak@canonical.com>,
 Vcs-Git: git://github.com/canonical/apt-packaging-fabric-manager.git
-Vcs-Browser: https://github.com/canonical/apt-packaging-fabric-manager/tree/550
+Vcs-Browser: https://github.com/canonical/apt-packaging-fabric-manager/tree/565
 Build-Depends: debhelper (>= 10)
 XS-Autobuild: yes
 Section: non-free/libs
 Priority: optional
 Standards-Version: 4.1.4
 
-Package: nvidia-fabricmanager-550
+Package: nvidia-fabricmanager-565
 Architecture: amd64 arm64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
@@ -40,7 +40,7 @@ Conflicts: nvidia-fabricmanager
 Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
-Package: nvidia-fabricmanager-dev-550
+Package: nvidia-fabricmanager-dev-565
 Architecture: amd64 arm64
 Depends: ${misc:Depends}
 # Normally we would have a dev package depend on its runtime package. However
@@ -52,10 +52,10 @@ Conflicts: nvidia-fabricmanager-dev
 Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
 
-Package: cuda-drivers-fabricmanager-550
+Package: cuda-drivers-fabricmanager-565
 Architecture: amd64 arm64
 Depends: ${misc:Depends},
- nvidia-fabricmanager-550 (= ${binary:Version}),
+ nvidia-fabricmanager-565 (= ${binary:Version}),
 Provides: cuda-drivers-fabricmanager
 Replaces: cuda-drivers-fabricmanager
 Conflicts: cuda-drivers-fabricmanager
