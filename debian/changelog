@@ -1,3 +1,9 @@
+fabric-manager-570 (570.133.20-0ubuntu0.20.04.1) focal; urgency=medium
+
+  * New upstream release 570.133.20 ERD3 (LP: #2107567)
+
+ -- Kuba Pawlak <kuba.pawlak@canonical.com>  Thu, 17 Apr 2025 15:17:53 +0200
+
 fabric-manager-570 (570.124.06-0ubuntu0.20.04.1) focal; urgency=medium
 
   * New upstream release 570.124.06 ERD2 (LP: #2100845)
