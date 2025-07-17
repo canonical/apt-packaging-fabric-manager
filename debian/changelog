@@ -1,3 +1,9 @@
+fabric-manager-570 (570.172.08-0ubuntu0.22.04.1) jammy; urgency=medium
+
+  * New upstream release 570.172.08 (LP: #2117176)
+
+ -- Kuba Pawlak <kuba.pawlak@canonical.com>  Thu, 17 Jul 2025 19:54:28 +0200
+
 fabric-manager-570 (570.158.01-0ubuntu0.22.04.1) jammy; urgency=medium
 
   * New upstream release 570.158.01 ERD5 (LP: #2114898)
