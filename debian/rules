@@ -77,7 +77,7 @@ unpack-stamp: NVIDIA-Linux-amd64
 
 .PHONY: fill_templates
 fill_templates:
-	for template in debian/templates/*.in; do \
+	for template in debian/templates/control.in; do \
 		dest=`echo $$template | \
 		      sed -e "s|\.in\$$||" \
 		          -e "s|templates\/||" \
