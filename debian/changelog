@@ -1,4 +1,4 @@
-fabric-manager-470 (470.256.02-0ubuntu0.22.04.2) jammy; urgency=medium
+fabric-manager-470 (470.256.02-0ubuntu0.22.04.3) jammy; urgency=medium
 
   * EOL transitionals to 535 (LP: #2110338)
 
