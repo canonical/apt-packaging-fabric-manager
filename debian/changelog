@@ -1,4 +1,4 @@
-fabric-manager-470 (470.256.02-0ubuntu0.20.04.2) focal; urgency=medium
+fabric-manager-470 (470.256.02-0ubuntu0.20.04.3) focal; urgency=medium
 
   * EOL transitionals to 535 (LP: #2110338)
 
