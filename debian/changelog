@@ -1,4 +1,4 @@
-fabric-manager-580 (580.95.05-0ubuntu2) questing; urgency=medium
+fabric-manager-580 (580.95.05-0ubuntu2) resolute; urgency=medium
 
   * Fix dependencies between packages (LP: #2129682)
 
