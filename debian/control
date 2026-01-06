@@ -19,22 +19,22 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Source: fabric-manager-580
+Source: fabric-manager-590
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Uploaders:
  Kuba Pawlak <kuba.pawlak@canonical.com>,
 Vcs-Git: git://github.com/canonical/apt-packaging-fabric-manager.git
-Vcs-Browser: https://github.com/canonical/apt-packaging-fabric-manager/tree/580
+Vcs-Browser: https://github.com/canonical/apt-packaging-fabric-manager/tree/590
 Build-Depends: debhelper (>= 10)
 XS-Autobuild: yes
 Section: non-free/libs
 Priority: optional
 Standards-Version: 4.1.4
 
-Package: nvidia-fabricmanager-580
+Package: nvidia-fabricmanager-590
 Architecture: amd64 arm64
 Depends:
- nvidia-kernel-common-580-server-580.105.08 [!i386],
+ nvidia-kernel-common-590-server-590.48.01 [!i386],
  ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
 Replaces: nvidia-fabricmanager
@@ -42,10 +42,10 @@ Conflicts: nvidia-fabricmanager
 Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
-Package: nvidia-fabricmanager-dev-580
+Package: nvidia-fabricmanager-dev-590
 Architecture: amd64 arm64
 Depends:
- nvidia-kernel-common-580-server-580.105.08 [!i386],
+ nvidia-kernel-common-590-server-590.48.01 [!i386],
  ${misc:Depends}
 # Normally we would have a dev package depend on its runtime package. However
 # FM isn't a normal package. All the libs are in the dev package, and the
@@ -56,10 +56,10 @@ Conflicts: nvidia-fabricmanager-dev
 Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
 
-Package: cuda-drivers-fabricmanager-580
+Package: cuda-drivers-fabricmanager-590
 Architecture: amd64 arm64
 Depends: ${misc:Depends},
- nvidia-fabricmanager-580 (= ${binary:Version}),
+ nvidia-fabricmanager-590 (= ${binary:Version}),
 Provides: cuda-drivers-fabricmanager
 Replaces: cuda-drivers-fabricmanager
 Conflicts: cuda-drivers-fabricmanager
