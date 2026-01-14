@@ -2,6 +2,12 @@ fabric-manager-535 (535.288.01-0ubuntu0.25.04.1) plucky; urgency=medium
 
   * New upstream release 535.288.01 (LP: #2138271)
 
+ -- Abdur Rahman <abdur.rahman@canonical.com>  Wed, 14 Jan 2026 10:44:02 -0500
+
+fabric-manager-535 (535.288.01-0ubuntu0.25.04.1) plucky; urgency=medium
+
+  * New upstream release 535.288.01 (LP: #2138271)
+
  -- Abdur Rahman <abdur.rahman@canonical.com>  Wed, 14 Jan 2026 09:46:07 -0500
 
 fabric-manager-535 (535.288.01-0ubuntu0.25.04.1) plucky; urgency=medium
