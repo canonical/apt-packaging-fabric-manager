@@ -34,7 +34,7 @@ Standards-Version: 4.1.4
 Package: nvidia-fabricmanager-580
 Architecture: amd64 arm64
 Depends:
- nvidia-kernel-common-580-server-580.126.09 [!i386],
+ nvidia-kernel-common-580-server-580.126.20 [!i386],
  ${misc:Depends}, ${shlibs:Depends}
 Provides: nvidia-fabricmanager
 Replaces: nvidia-fabricmanager
@@ -45,7 +45,7 @@ Description: Fabric Manager for NVSwitch based systems.
 Package: nvidia-fabricmanager-dev-580
 Architecture: amd64 arm64
 Depends:
- nvidia-kernel-common-580-server-580.126.09 [!i386],
+ nvidia-kernel-common-580-server-580.126.20 [!i386],
  ${misc:Depends}
 # Normally we would have a dev package depend on its runtime package. However
 # FM isn't a normal package. All the libs are in the dev package, and the
