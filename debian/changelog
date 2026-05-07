@@ -1,3 +1,9 @@
+fabric-manager-535 (535.309.01-0ubuntu0.22.04.1) jammy; urgency=medium
+
+  * New upstream release 535.309.01 ERD/UDA (LP: #2151111)
+
+ -- Noah Wager <noah.wager@canonical.com>  Wed, 06 May 2026 23:54:06 -0700
+
 fabric-manager-535 (535.288.01-0ubuntu0.22.04.1) jammy; urgency=medium
 
   * New upstream release 535.288.01 ERD17 (LP: #2138271)
