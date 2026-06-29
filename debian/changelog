@@ -1,8 +1,8 @@
-fabric-manager-580 (580.167.08-0ubuntu0.18.04.1) UNRELEASED; urgency=medium
+fabric-manager-580 (580.167.08-0ubuntu0.18.04.1) bionic; urgency=medium
 
   * New upstream version 580.167.08 (LP: #2158595)
 
- -- Abdur Rahman <abdur.rahman@canonical.com>  Mon, 29 Jun 2026 02:20:02 -0400
+ -- Abdur Rahman <abdur.rahman@canonical.com>  Mon, 29 Jun 2026 02:20:51 -0400
 
 fabric-manager-580 (580.159.03-0ubuntu0.18.04.1) bionic; urgency=medium
 
