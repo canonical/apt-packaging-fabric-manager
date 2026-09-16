@@ -68,26 +68,26 @@ Description: Meta-package for FM and Driver
  meta-package simultaneously while keeping version equivalence. This meta-
  package is branch-specific.
 
-Package: nvidia-fabricmanager-590
+Package: nvidia-fabricmanager-610
 Architecture: amd64 arm64
 Section: oldlibs
 Multi-Arch: no
-Depends: nvidia-fabricmanager-595
+Depends: nvidia-fabricmanager-615
 Description: Fabric Manager for NVSwitch based systems. (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: nvidia-fabricmanager-dev-590
+Package: nvidia-fabricmanager-dev-610
 Architecture: amd64 arm64
 Section: oldlibs
 Multi-Arch: no
-Depends: nvidia-fabricmanager-dev-595
+Depends: nvidia-fabricmanager-dev-615
 Description: Fabric Manager API headers and associated library (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: cuda-drivers-fabricmanager-590
+Package: cuda-drivers-fabricmanager-610
 Architecture: amd64 arm64
 Section: oldlibs
 Multi-Arch: no
-Depends: cuda-drivers-fabricmanager-595
+Depends: cuda-drivers-fabricmanager-615
 Description: Meta-package for FM and Driver (transitional package)
  Transitional package for upgrades. This package can be safely removed.
