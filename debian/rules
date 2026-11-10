@@ -30,13 +30,21 @@ include debian/rules.defs
 VERSION         = $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//')
 MAJOR_VER		= $(firstword $(subst ., ,$(VERSION)))
 
-NVIDIA_RELEASE   = $(VERSION)
+# The upstream component is versioned independently of the driver (e.g.
+# fabricmanager_snnvl 2.0.0.rel106 for driver 620.70.06). debian/upstream-version
+# holds a single line "<driver-version> <component-version>" for the packaged
+# driver version; get-orig-source maintains it from NVIDIA's
+# redistrib_<version>.json. Override the lookup with UPSTREAM_RELEASE=<version>.
+UPSTREAM_VERSION_FILE = debian/upstream-version
+UPSTREAM_VERSIONS = $(shell cat $(UPSTREAM_VERSION_FILE) 2>/dev/null)
+UPSTREAM_RELEASE ?=
+NVIDIA_RELEASE   = $(if $(filter $(VERSION),$(word 1,$(UPSTREAM_VERSIONS))),$(word 2,$(UPSTREAM_VERSIONS)),$(error $(UPSTREAM_VERSION_FILE) is not for $(VERSION), run debian/rules get-orig-source))
 REVISION        ?= 1
 TIMESTAMP       := $(shell date -R)
 
 CACHE			?= ../.cache
 ORIGDIR			?= fabric-manager-$(MAJOR_VER).orig
-TARBALL_BASE	?= fabric-manager-$(MAJOR_VER)_$(NVIDIA_RELEASE).orig
+TARBALL_BASE	?= fabric-manager-$(MAJOR_VER)_$(VERSION).orig
 TARBALL_SUFFIX	?= .tar.gz
 TARBALL			?= $(TARBALL_BASE)$(TARBALL_SUFFIX)
 ORIGDIR.empty	?= $(ORIGDIR)
@@ -123,6 +131,9 @@ get-orig-source-prepare/%: get-orig-source-prepare
 get-orig-source-download/%: get-orig-source-prepare
 	ln -v $(CACHE)/$(NVIDIA_FILENAME_$*) get-orig-source/ 2>/dev/null || \
 		wget $(call get_download_url,$*) -P get-orig-source/ || cp $*/$(NVIDIA_FILENAME_$*) get-orig-source/
+	debian/update-upstream-version --component $(REDIST_COMPONENT) \
+		--driver-version $(VERSION) --release "$(UPSTREAM_RELEASE)" \
+		--verify get-orig-source --archs $*
 	if [ -d $(CACHE) ] && [ ! -f $(CACHE)/$(NVIDIA_FILENAME_$*) ]; then \
 		ln -v get-orig-source/$(NVIDIA_FILENAME_$*) $(CACHE) ; fi
 
@@ -149,5 +160,9 @@ get-orig-source-files/empty: get-orig-source-prepare/empty $(foreach a,$(ARCH_LI
 	touch get-orig-source/$(call get_origdir,empty).stamp -r $$(ls -tr $(foreach a,$(ARCH_LIST),$(call get_tarball,$a)) | tail -n 1)
 
 .PHONY: get-orig-source
-get-orig-source: get-orig-source-pack/empty
+get-orig-source:
+	debian/update-upstream-version --component $(REDIST_COMPONENT) \
+		--driver-version $(VERSION) --release "$(UPSTREAM_RELEASE)"
+	# Re-invoke make so NVIDIA_RELEASE picks up the updated file.
+	$(MAKE) -f debian/rules get-orig-source-pack/empty
 	rm -rf get-orig-source
