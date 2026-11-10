@@ -1,0 +1,114 @@
+#!/usr/bin/python3
+"""Map an NVIDIA driver release to the version of a redist component.
+
+Since 620, NVIDIA versions some companion components (IMEX, Fabric Manager)
+independently of the driver, e.g. driver 620.70.06 ships imex 2.0.0.rel49.
+The Ubuntu packages keep the driver version, and debian/upstream-version
+records which upstream component release the packaged driver release
+corresponds to, as a single line:
+
+    620.70.06 2.0.0.rel49
+
+This script resolves the component version from NVIDIA's
+redistrib_<driver-version>.json manifest (or takes it from --release) and
+rewrites the file. It needs network access and is only meant to be run from
+"debian/rules get-orig-source", never during a build.
+
+With --verify DIR it checks the downloaded archives in DIR against the
+sha256 sums published in the manifest.
+"""
+
+import argparse
+import hashlib
+import json
+import os
+import sys
+import urllib.request
+
+REDIST_URL = "https://developer.download.nvidia.com/compute/nvidia-driver/redist"
+ARCH_KEYS = {"amd64": "linux-x86_64", "arm64": "linux-sbsa"}
+
+
+def fetch_manifest(driver_version):
+    url = f"{REDIST_URL}/redistrib_{driver_version}.json"
+    try:
+        with urllib.request.urlopen(url, timeout=60) as resp:
+            return json.load(resp)
+    except Exception as e:
+        sys.exit(f"E: could not fetch {url}: {e}")
+
+
+def component_entry(manifest, component, driver_version):
+    entry = manifest.get(component)
+    if not isinstance(entry, dict) or "version" not in entry:
+        sys.exit(
+            f"E: '{component}' is not listed in redistrib_{driver_version}.json.\n"
+            f"E: Pass the upstream release explicitly, e.g.\n"
+            f"E:   debian/rules get-orig-source UPSTREAM_RELEASE=<version>"
+        )
+    return entry
+
+
+def read_versions(path):
+    """Return (driver_version, component_version), or None if absent."""
+    if not os.path.exists(path):
+        return None
+    with open(path) as f:
+        fields = f.read().split()
+    if len(fields) != 2:
+        sys.exit(f"E: {path} must contain one line: <driver-version> <component-version>")
+    return fields[0], fields[1]
+
+
+def verify(manifest, component, driver_version, directory, archs):
+    entry = component_entry(manifest, component, driver_version)
+    for arch in archs:
+        info = entry.get(ARCH_KEYS[arch])
+        if not info:
+            sys.exit(f"E: no {ARCH_KEYS[arch]} archive for {component} in manifest")
+        path = os.path.join(directory, os.path.basename(info["relative_path"]))
+        with open(path, "rb") as f:
+            digest = hashlib.sha256(f.read()).hexdigest()
+        if digest != info["sha256"]:
+            sys.exit(f"E: sha256 mismatch for {path}: {digest} != {info['sha256']}")
+        print(f"I: sha256 OK: {os.path.basename(path)}")
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--component", required=True, help="redist component, e.g. imex")
+    p.add_argument("--driver-version", required=True)
+    p.add_argument("--file", default="debian/upstream-version")
+    p.add_argument("--release", default="", help="override the manifest lookup")
+    p.add_argument("--verify", metavar="DIR", help="verify archives in DIR")
+    p.add_argument("--archs", default="amd64 arm64")
+    args = p.parse_args()
+
+    if args.verify:
+        if args.release:
+            print("I: UPSTREAM_RELEASE override given, skipping sha256 verification")
+            return
+        manifest = fetch_manifest(args.driver_version)
+        verify(manifest, args.component, args.driver_version, args.verify, args.archs.split())
+        return
+
+    if args.release:
+        release = args.release
+        print(f"I: using {args.component} {release} (override)")
+    else:
+        manifest = fetch_manifest(args.driver_version)
+        release = component_entry(manifest, args.component, args.driver_version)["version"]
+        print(f"I: redistrib_{args.driver_version}.json: {args.component} {release}")
+
+    new = (args.driver_version, release)
+    old = read_versions(args.file)
+    if old == new:
+        print(f"I: {args.file} is up to date: {' '.join(new)}")
+        return
+    with open(args.file, "w") as f:
+        f.write(" ".join(new) + "\n")
+    print(f"I: {args.file}: {' '.join(old) if old else '(none)'} -> {' '.join(new)}")
+
+
+if __name__ == "__main__":
+    main()
